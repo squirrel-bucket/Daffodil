@@ -3,5 +3,10 @@
   "block.daffodil.daffodil_flower": "Daffodil",
   "block.daffodil.daffodil_wool": "Daffodil Wool",
   "item.daffodil.daffodil_dye": "Daffodil Dye",
-  "block.daffodil.daffodil_carpet": "Daffodil Carpet"
+  "block.daffodil.daffodil_carpet": "Daffodil Carpet",
+  "block.daffodil.daffodil_concrete": "Daffodil Concrete",
+  "block.daffodil.daffodil_concrete_powder": "Daffodil Concrete Powder",
+  "block.daffodil.daffodil_terracotta": "Daffodil Terracotta",
+  "itemGroup.daffodil.daffodil_tab": "Daffodil"
+
 }
