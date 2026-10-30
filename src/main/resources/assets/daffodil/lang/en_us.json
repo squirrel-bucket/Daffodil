@@ -7,6 +7,9 @@
   "block.daffodil.daffodil_concrete": "Daffodil Concrete",
   "block.daffodil.daffodil_concrete_powder": "Daffodil Concrete Powder",
   "block.daffodil.daffodil_terracotta": "Daffodil Terracotta",
-  "itemGroup.daffodil.daffodil_tab": "Daffodil"
+  "block.daffodil.daffodil_glazed_terracotta": "Daffodil Glazed Terracotta",
+  "block.daffodil.daffodil_bed": "Daffodil Bed",
 
+
+  "itemGroup.daffodil.daffodil_tab": "Daffodil"
 }

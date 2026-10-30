@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/thin_block",
+  "textures": {
+    "particle": "minecraft:block/red_wool"
+  }
+}

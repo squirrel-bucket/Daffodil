@@ -1,0 +1,7 @@
+{
+  "parent": "daffodil:block/bed_foot",
+  "textures": {
+    "particle": "minecraft:block/oak_planks",
+    "texture": "daffodil:entity/bed/daffodil"
+  }
+}

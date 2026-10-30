@@ -1,4 +1,4 @@
-package com.example.examplemod.block;
+package com.squirrelbucket.daffodil.core;
 
 import net.minecraft.world.level.block.CarpetBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;

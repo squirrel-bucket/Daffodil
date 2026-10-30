@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "daffodil:daffodil_concrete",
+    "daffodil:verdant_concrete",
+    "daffodil:scarlet_concrete",
+    "daffodil:daffodil_glazed_terracotta",
+    "daffodil:verdant_glazed_terracotta",
+    "daffodil:scarlet_glazed_terracotta"
+  ]
+}
