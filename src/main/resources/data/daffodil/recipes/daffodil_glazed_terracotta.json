@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "ingredient": {
-    "item": "daffodil:daffodil_glazed_terracotta"
+    "item": "daffodil:daffodil_terracotta"
   },
   "result": "daffodil:daffodil_glazed_terracotta"
 }

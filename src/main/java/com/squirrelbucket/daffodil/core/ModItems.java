@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BedItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,6 +31,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> DAFFODIL_ITEM = ITEMS.register("daffodil_flower",
             () -> new BlockItem(ModBlocks.DAFFODIL_BLOCK.get(), new Item.Properties()));
+    public static final RegistryObject<Item> GOJI_BERRIES = ITEMS.register("goji_berries",
+            () -> new ItemNameBlockItem(ModBlocks.GOJI_BERRY_BUSH.get(), new Item.Properties().food(ModFoods.GOJI_BERRIES)));
 
     public static final RegistryObject<Item> DAFFODIL_WOOL_ITEM = ITEMS.register("daffodil_wool",
             () -> new BlockItem(ModBlocks.DAFFODIL_WOOL_BLOCK.get(), new Item.Properties()));

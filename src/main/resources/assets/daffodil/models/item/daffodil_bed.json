@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/template_bed",
   "textures": {
-    "particle": "daffodil:entity/bed/daffodil"
+    "particle": "daffodil:block/daffodil_wool"
   }
 }

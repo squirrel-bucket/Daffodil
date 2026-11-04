@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "scarlet_dye",
+  "ingredients": [
+    {
+      "item": "daffodil:goji_berries"
+    }
+  ],
+  "result": {
+    "item": "daffodil:scarlet_dye"
+  }
+}

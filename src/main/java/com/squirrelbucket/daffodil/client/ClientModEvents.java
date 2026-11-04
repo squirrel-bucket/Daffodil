@@ -23,7 +23,7 @@ public class ClientModEvents {
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 
         event.registerBlockEntityRenderer(
-                ModBlockEntities.DAFFODIL_BED.get(),
+                ModBlockEntities.CUSTOM_BED.get(),
                 ModBedRenderer::new
         );
     }

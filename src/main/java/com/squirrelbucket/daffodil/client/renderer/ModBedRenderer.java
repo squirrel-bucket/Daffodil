@@ -7,6 +7,7 @@ import com.squirrelbucket.daffodil.customBlockEntities.customBedBlockEntity;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.resources.model.Material;
@@ -67,13 +68,20 @@ public class ModBedRenderer implements BlockEntityRenderer<customBedBlockEntity>
         ResourceLocation textureLocation;
 
         if (color instanceof DyeColor vanillaColor) {
-            textureLocation = new ResourceLocation("minecraft", "entity/bed/" + vanillaColor.getName());
+            textureLocation = new ResourceLocation(
+                    "minecraft",
+                    "entity/bed/" + vanillaColor.getName()
+            );
         } else {
-            textureLocation = new ResourceLocation("daffodil", "entity/bed/" + color.getSerializedName());
+            textureLocation = new ResourceLocation(
+                    "daffodil",
+                    "entity/bed/" + color.getSerializedName()
+            );
         }
 
-        return new Material(net.minecraft.client.renderer.texture.TextureAtlas.LOCATION_BLOCKS, textureLocation);
+        return new Material(
+                Sheets.BED_SHEET,
+                textureLocation
+        );
     }
-
-
 }

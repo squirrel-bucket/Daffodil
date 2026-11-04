@@ -1,14 +1,32 @@
 package com.squirrelbucket.daffodil.core;
 
+import com.squirrelbucket.daffodil.Daffodil;
 import com.squirrelbucket.daffodil.client.CustomDyeColors;
 import com.squirrelbucket.daffodil.core.customBlocks.customBedBlock;
+import com.squirrelbucket.daffodil.core.customBlocks.customBerryBushBlock;
+import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.rmi.registry.Registry;
 
 public class ModBlocks {
     public static final String MODID = "daffodil";
@@ -17,6 +35,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DAFFODIL_BLOCK = BLOCKS.register("daffodil_flower",
             () -> new FlowerBlock(MobEffects.CONFUSION, 100, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> GOJI_BERRY_BUSH =
+            BLOCKS.register("goji_berry_bush", () ->
+                    new customBerryBushBlock(
+                            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),
+                            ModItems.GOJI_BERRIES::get
+                    )
+            );
 
     public static final RegistryObject<Block> DAFFODIL_WOOL_BLOCK = BLOCKS.register("daffodil_wool",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));

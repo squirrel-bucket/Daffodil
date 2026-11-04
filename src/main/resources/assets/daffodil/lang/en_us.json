@@ -10,6 +10,15 @@
   "block.daffodil.daffodil_glazed_terracotta": "Daffodil Glazed Terracotta",
   "block.daffodil.daffodil_bed": "Daffodil Bed",
 
+  "item.daffodil.goji_berries": "Goji Berries",
+  "block.daffodil.scarlet_wool": "Scarlet Wool",
+  "item.daffodil.scarlet_dye": "Scarlet Dye",
+  "block.daffodil.scarlet_carpet": "Scarlet Carpet",
+  "block.daffodil.scarlet_concrete": "Scarlet Concrete",
+  "block.daffodil.scarlet_concrete_powder": "Scarlet Concrete Powder",
+  "block.daffodil.scarlet_terracotta": "Scarlet Terracotta",
+  "block.daffodil.scarlet_glazed_terracotta": "Scarlet Glazed Terracotta",
+  "block.daffodil.scarlet_bed": "Scarlet Bed",
 
   "itemGroup.daffodil.daffodil_tab": "Daffodil"
 }
