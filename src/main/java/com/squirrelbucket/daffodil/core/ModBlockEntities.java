@@ -18,7 +18,7 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(
                             customBedBlockEntity::new,
                             ModBlocks.DAFFODIL_BED.get(),
-                            ModBlocks.VERDANT_BED.get(),
+                            ModBlocks.BURGUNDY_BED.get(),
                             ModBlocks.SCARLET_BED.get()
                     ).build(null));
 }

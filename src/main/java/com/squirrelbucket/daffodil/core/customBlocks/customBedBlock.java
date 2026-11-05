@@ -1,5 +1,6 @@
 package com.squirrelbucket.daffodil.core.customBlocks;
 
+import com.squirrelbucket.daffodil.client.CustomDyeColors;
 import com.squirrelbucket.daffodil.customBlockEntities.customBedBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.StringRepresentable;
@@ -11,16 +12,17 @@ import net.minecraft.world.level.block.state.BlockState;
 import javax.annotation.Nullable;
 
 public class customBedBlock extends BedBlock {
-    // 1. Change the type from DyeColor to StringRepresentable
-    private final StringRepresentable bedColor;
 
-    public customBedBlock(StringRepresentable color, Properties properties) {
+    private final CustomDyeColors bedColor;
 
-        super(color instanceof DyeColor vanillaColor ? vanillaColor : DyeColor.BLACK, properties);
+    public customBedBlock(CustomDyeColors color, Properties properties) {
+
+        super(DyeColor.YELLOW, properties);
+
         this.bedColor = color;
     }
 
-    public StringRepresentable getBedColor() {
+    public CustomDyeColors getBedColor() {
         return this.bedColor;
     }
 

@@ -1,5 +1,7 @@
 package com.squirrelbucket.daffodil.core;
 
+import net.minecraft.util.StringRepresentable;
+
 public enum ModDyeColors implements StringRepresentable {
     DAFFODIL("daffodil", 0xf9f96b),
     VERDANT("verdant", 0x700725 ),
