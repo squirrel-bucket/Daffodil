@@ -52,9 +52,9 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.SCARLET_CARPET_BLOCK.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> DAFFODIL_BED_ITEM = ITEMS.register("daffodil_bed",
-            () -> new BlockItem(ModBlocks.DAFFODIL_BED.get(), new Item.Properties()));
+            () -> new ModBedItem(ModBlocks.DAFFODIL_BED.get(), new Item.Properties()));
     public static final RegistryObject<Item> BURGUNDY_BED_ITEM = ITEMS.register("burgundy_bed",
-            () -> new BlockItem(ModBlocks.BURGUNDY_BED.get(), new Item.Properties()));
+            () -> new ModBedItem(ModBlocks.BURGUNDY_BED.get(), new Item.Properties()));
     public static final RegistryObject<Item> SCARLET_BED = ITEMS.register("scarlet_bed",
             () -> new ModBedItem(ModBlocks.SCARLET_BED.get(), new Item.Properties()));
 

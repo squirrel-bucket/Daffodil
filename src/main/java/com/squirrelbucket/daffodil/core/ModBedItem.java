@@ -1,5 +1,6 @@
 package com.squirrelbucket.daffodil.core;
 
+import com.squirrelbucket.daffodil.client.renderer.ModBedItemRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
@@ -16,8 +17,9 @@ public class ModBedItem extends BlockItem {
         consumer.accept(new IClientItemExtensions() {
             @Override
             public BlockEntityWithoutLevelRenderer getCustomRenderer() {
-                return net.minecraft.client.Minecraft.getInstance().getItemRenderer().getBlockEntityRenderer();
+                return ModBedItemRenderer.INSTANCE;
             }
         });
     }
+
 }

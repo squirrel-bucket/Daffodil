@@ -68,12 +68,12 @@ public class ModBedRenderer implements BlockEntityRenderer<customBedBlockEntity>
         ResourceLocation textureLocation;
 
         if (color instanceof DyeColor vanillaColor) {
-            textureLocation = new ResourceLocation(
+            textureLocation = ResourceLocation.fromNamespaceAndPath(
                     "minecraft",
                     "entity/bed/" + vanillaColor.getName()
             );
         } else {
-            textureLocation = new ResourceLocation(
+            textureLocation = ResourceLocation.fromNamespaceAndPath(
                     "daffodil",
                     "entity/bed/" + color.getSerializedName()
             );

@@ -3,7 +3,6 @@ package com.squirrelbucket.daffodil.core.customBlocks;
 import com.squirrelbucket.daffodil.client.CustomDyeColors;
 import com.squirrelbucket.daffodil.customBlockEntities.customBedBlockEntity;
 import net.minecraft.core.BlockPos;
-import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
