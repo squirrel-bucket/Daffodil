@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/template_bed",
-  "textures": {
-    "particle": "daffodil:block/daffodil_wool"
-  }
+  "parent": "minecraft:builtin/entity"
 }
