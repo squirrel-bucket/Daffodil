@@ -2,7 +2,7 @@ package com.squirrelbucket.daffodil.core;
 
 public enum ModDyeColors implements StringRepresentable {
     DAFFODIL("daffodil", 0xf9f96b),
-    VERDANT("verdant", 0x700725 ),
+    VERDANT("verdant", 0x700725),
     SCARLET("scarlet", 0xec241c);
 
     private final String name;
