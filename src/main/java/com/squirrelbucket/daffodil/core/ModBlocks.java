@@ -35,6 +35,11 @@ public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
 
+    public static final RegistryObject<Block> PLUM_LEAVES = BLOCKS.register("plum_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
+    public static final RegistryObject<Block> FLOWERING_PLUM_LEAVES = BLOCKS.register("flowering_plum_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.FLOWERING_AZALEA_LEAVES)));
+
     public static final RegistryObject<Block> DAFFODIL_BLOCK = BLOCKS.register("daffodil_flower",
             () -> new FlowerBlock(MobEffects.CONFUSION, 100, BlockBehaviour.Properties.copy(Blocks.POPPY)));
     public static final RegistryObject<Block> HIBISCUS_BLOCK = BLOCKS.register("hibiscus_flower",

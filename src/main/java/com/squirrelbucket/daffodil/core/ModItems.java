@@ -39,6 +39,12 @@ public class ModItems {
     public static final RegistryObject<Item> BURGUNDY_BANNER = ITEMS.register("burgundy_banner",
             () -> new CustomBannerItem(ModBlocks.BURGUNDY_BANNER.get(), ModBlocks.BURGUNDY_WALL_BANNER.get(), new Item.Properties()));
 
+
+    public static final RegistryObject<Item> PLUM_LEAVES = ITEMS.register("plum_leaves",
+            () -> new BlockItem(ModBlocks.PLUM_LEAVES.get(), new Item.Properties()));
+    public static final RegistryObject<Item> FLOWERING_PLUM_LEAVES = ITEMS.register("flowering_plum_leaves",
+            () -> new BlockItem(ModBlocks.FLOWERING_PLUM_LEAVES.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> DAFFODIL_ITEM = ITEMS.register("daffodil_flower",
             () -> new BlockItem(ModBlocks.DAFFODIL_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Item> HIBISCUS_ITEM = ITEMS.register("hibiscus_flower",
