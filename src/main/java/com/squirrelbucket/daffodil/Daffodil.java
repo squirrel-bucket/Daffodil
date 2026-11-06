@@ -1,9 +1,9 @@
 package com.squirrelbucket.daffodil;
 
-import com.squirrelbucket.daffodil.core.ModBlockEntities;
-import com.squirrelbucket.daffodil.core.ModBlocks;
-import com.squirrelbucket.daffodil.core.ModCreativeTabs;
-import com.squirrelbucket.daffodil.core.ModItems;
+import com.squirrelbucket.daffodil.core.*;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -38,6 +38,14 @@ public class Daffodil
 
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(this::restoreVanillaDyeLookup);
+    }
+
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            WoodType.register(ModWoodTypes.PLUM_WOOD_TYPE);
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.PLUM_TRAPDOOR.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.PLUM_DOOR.get(), RenderType.cutout());
+        });
     }
 
     @SuppressWarnings("unchecked")

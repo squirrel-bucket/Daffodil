@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "daffodil:block/stripped_plum_log",
+    "side": "daffodil:block/stripped_plum_log"
+  }
+}

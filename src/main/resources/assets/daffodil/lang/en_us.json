@@ -1,4 +1,4 @@
-
+﻿
 {
   "block.daffodil.daffodil_flower": "Daffodil",
   "block.daffodil.daffodil_wool": "Daffodil Wool",
@@ -18,6 +18,19 @@
 
   "block.daffodil.plum_leaves": "Plum Leaves",
   "block.daffodil.flowering_plum_leaves": "Flowering Plum Leaves",
+  "block.daffodil.plum_planks": "Plum Planks",
+  "block.daffodil.plum_log": "Plum Log",
+  "block.daffodil.stripped_plum_log": "Stripped Plum Log",
+  "block.daffodil.plum_wood": "Plum Wood",
+  "block.daffodil.stripped_plum_wood": "Stripped Plum Wood",
+  "block.daffodil.plum_stairs": "Plum Stairs",
+  "block.daffodil.plum_slab": "Plum Slab",
+  "block.daffodil.plum_trapdoor": "Plum Trapdoor",
+  "block.daffodil.plum_button": "Plum Button",
+  "block.daffodil.plum_pressure_plate": "Plum Pressure Plate",
+  "block.daffodil.plum_door": "Plum Door",
+  "block.daffodil.plum_fence": "Plum Fence",
+  "block.daffodil.plum_fence_gate": "Plum Fence Gate",
 
   "block.daffodil.hibiscus_flower": "Hibiscus",
   "block.daffodil.burgundy_wool": "Burgundy Wool",

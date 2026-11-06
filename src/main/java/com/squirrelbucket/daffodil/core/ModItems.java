@@ -45,6 +45,22 @@ public class ModItems {
     public static final RegistryObject<Item> FLOWERING_PLUM_LEAVES = ITEMS.register("flowering_plum_leaves",
             () -> new BlockItem(ModBlocks.FLOWERING_PLUM_LEAVES.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> PLUM_PLANKS = ModItems.ITEMS.register("plum_planks", () -> new BlockItem(ModBlocks.PLUM_PLANKS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_LOG = ModItems.ITEMS.register("plum_log", () -> new BlockItem(ModBlocks.PLUM_LOG.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STRIPPED_PLUM_LOG = ModItems.ITEMS.register("stripped_plum_log", () -> new BlockItem(ModBlocks.STRIPPED_PLUM_LOG.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_WOOD = ModItems.ITEMS.register("plum_wood", () -> new BlockItem(ModBlocks.PLUM_WOOD.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STRIPPED_PLUM_WOOD = ModItems.ITEMS.register("stripped_plum_wood", () -> new BlockItem(ModBlocks.STRIPPED_PLUM_WOOD.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> PLUM_STAIRS = ModItems.ITEMS.register("plum_stairs", () -> new BlockItem(ModBlocks.PLUM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_SLAB = ModItems.ITEMS.register("plum_slab", () -> new BlockItem(ModBlocks.PLUM_SLAB.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> PLUM_TRAPDOOR = ModItems.ITEMS.register("plum_trapdoor", () -> new BlockItem(ModBlocks.PLUM_TRAPDOOR.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_BUTTON = ModItems.ITEMS.register("plum_button", () -> new BlockItem(ModBlocks.PLUM_BUTTON.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_PRESSURE_PLATE = ModItems.ITEMS.register("plum_pressure_plate", () -> new BlockItem(ModBlocks.PLUM_PRESSURE_PLATE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_DOOR = ModItems.ITEMS.register("plum_door", () -> new BlockItem(ModBlocks.PLUM_DOOR.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_FENCE = ModItems.ITEMS.register("plum_fence", () -> new BlockItem(ModBlocks.PLUM_FENCE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_FENCE_GATE = ModItems.ITEMS.register("plum_fence_gate", () -> new BlockItem(ModBlocks.PLUM_FENCE_GATE.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> DAFFODIL_ITEM = ITEMS.register("daffodil_flower",
             () -> new BlockItem(ModBlocks.DAFFODIL_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Item> HIBISCUS_ITEM = ITEMS.register("hibiscus_flower",

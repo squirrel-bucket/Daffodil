@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "plum_planks",
+  "ingredients": [
+    {
+      "item": "daffodil:stripped_plum_wood"
+    }
+  ],
+  "result": {
+    "item": "daffodil:plum_planks",
+    "count": 4
+  }
+}

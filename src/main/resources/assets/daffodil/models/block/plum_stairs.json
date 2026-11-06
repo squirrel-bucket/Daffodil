@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "daffodil:block/plum_planks",
+    "side": "daffodil:block/plum_planks",
+    "top": "daffodil:block/plum_planks"
+  }
+}

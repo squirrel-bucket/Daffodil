@@ -39,6 +39,34 @@ public class ModBlocks {
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
     public static final RegistryObject<Block> FLOWERING_PLUM_LEAVES = BLOCKS.register("flowering_plum_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.FLOWERING_AZALEA_LEAVES)));
+    public static final RegistryObject<Block> PLUM_PLANKS = BLOCKS.register("plum_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> PLUM_LOG = BLOCKS.register("plum_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_PLUM_LOG = BLOCKS.register("stripped_plum_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> PLUM_WOOD = BLOCKS.register("plum_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_PLUM_WOOD = BLOCKS.register("stripped_plum_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> PLUM_STAIRS = BLOCKS.register("plum_stairs",
+            () -> new StairBlock(() -> PLUM_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
+    public static final RegistryObject<Block> PLUM_SLAB = BLOCKS.register("plum_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)));
+
+    public static final RegistryObject<Block> PLUM_TRAPDOOR = BLOCKS.register("plum_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), ModWoodTypes.PLUM_BLOCK_SET_TYPE));
+    public static final RegistryObject<Block> PLUM_BUTTON = BLOCKS.register("plum_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), ModWoodTypes.PLUM_BLOCK_SET_TYPE, 30, true));
+    public static final RegistryObject<Block> PLUM_PRESSURE_PLATE = BLOCKS.register("plum_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), ModWoodTypes.PLUM_BLOCK_SET_TYPE));
+    public static final RegistryObject<Block> PLUM_DOOR = BLOCKS.register("plum_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), ModWoodTypes.PLUM_BLOCK_SET_TYPE));
+    public static final RegistryObject<Block> PLUM_FENCE = BLOCKS.register("plum_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    public static final RegistryObject<Block> PLUM_FENCE_GATE = BLOCKS.register("plum_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), ModWoodTypes.PLUM_WOOD_TYPE));
 
     public static final RegistryObject<Block> DAFFODIL_BLOCK = BLOCKS.register("daffodil_flower",
             () -> new FlowerBlock(MobEffects.CONFUSION, 100, BlockBehaviour.Properties.copy(Blocks.POPPY)));

@@ -46,4 +46,6 @@ public class ClientModEvents {
         BlockEntityRenderers.register(ModBlockEntities.CUSTOM_BANNER.get(), ModBannerRenderer::new);
     }
 
+
+
 }
