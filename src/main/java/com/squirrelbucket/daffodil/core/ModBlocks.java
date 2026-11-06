@@ -2,6 +2,8 @@ package com.squirrelbucket.daffodil.core;
 
 import com.squirrelbucket.daffodil.Daffodil;
 import com.squirrelbucket.daffodil.client.CustomDyeColors;
+import com.squirrelbucket.daffodil.core.customBlocks.customBannerBlock;
+import com.squirrelbucket.daffodil.core.customBlocks.customWallBannerBlock;
 import com.squirrelbucket.daffodil.core.customBlocks.customBedBlock;
 import com.squirrelbucket.daffodil.core.customBlocks.customBerryBushBlock;
 import net.minecraft.core.BlockPos;
@@ -64,6 +66,19 @@ public class ModBlocks {
             () -> new ModCarpetBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_CARPET)));
     public static final RegistryObject<Block> SCARLET_CARPET_BLOCK = BLOCKS.register("scarlet_carpet",
             () -> new ModCarpetBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_CARPET)));
+
+    public static final RegistryObject<Block> DAFFODIL_BANNER = BLOCKS.register("daffodil_banner",
+            () -> new customBannerBlock(CustomDyeColors.DAFFODIL, BlockBehaviour.Properties.copy(Blocks.WHITE_BANNER)));
+    public static final RegistryObject<Block> BURGUNDY_BANNER = BLOCKS.register("burgundy_banner",
+            () -> new customBannerBlock(CustomDyeColors.BURGUNDY, BlockBehaviour.Properties.copy(Blocks.WHITE_BANNER)));
+    public static final RegistryObject<Block> SCARLET_BANNER = BLOCKS.register("scarlet_banner",
+            () -> new customBannerBlock(CustomDyeColors.SCARLET, BlockBehaviour.Properties.copy(Blocks.WHITE_BANNER)));
+    public static final RegistryObject<Block> DAFFODIL_WALL_BANNER = BLOCKS.register("daffodil_wall_banner",
+            () -> new customWallBannerBlock(CustomDyeColors.DAFFODIL, BlockBehaviour.Properties.copy(Blocks.WHITE_WALL_BANNER)));
+    public static final RegistryObject<Block> SCARLET_WALL_BANNER = BLOCKS.register("scarlet_wall_banner",
+            () -> new customWallBannerBlock(CustomDyeColors.SCARLET, BlockBehaviour.Properties.copy(Blocks.WHITE_WALL_BANNER)));
+    public static final RegistryObject<Block> BURGUNDY_WALL_BANNER = BLOCKS.register("burgundy_wall_banner",
+            () -> new customWallBannerBlock(CustomDyeColors.BURGUNDY, BlockBehaviour.Properties.copy(Blocks.WHITE_WALL_BANNER)));
 
     public static final RegistryObject<Block> DAFFODIL_BED = BLOCKS.register("daffodil_bed",
             () -> new customBedBlock(CustomDyeColors.DAFFODIL, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));

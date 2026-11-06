@@ -8,7 +8,16 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.DyeItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.Map;
+import net.minecraftforge.fml.util.ObfuscationReflectionHelper;
 
 @Mod(Daffodil.MODID)
 public class Daffodil
@@ -28,6 +37,26 @@ public class Daffodil
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(this::restoreVanillaDyeLookup);
+    }
+
+    @SuppressWarnings("unchecked")
+    private void restoreVanillaDyeLookup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            try {
+                Map<DyeColor, DyeItem> dyeItems = ObfuscationReflectionHelper.getPrivateValue(
+                        DyeItem.class, null, "ITEM_BY_COLOR");
+                for (DyeColor color : DyeColor.values()) {
+                    Item item = ForgeRegistries.ITEMS.getValue(
+                            new ResourceLocation("minecraft", color.getName() + "_dye"));
+                    if (item instanceof DyeItem vanillaDye) {
+                        dyeItems.put(color, vanillaDye);
+                    }
+                }
+            } catch (RuntimeException exception) {
+                throw new IllegalStateException("Unable to restore the vanilla dye lookup after registering loom-compatible custom dyes", exception);
+            }
+        });
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

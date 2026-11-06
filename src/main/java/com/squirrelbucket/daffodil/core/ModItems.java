@@ -3,6 +3,8 @@ package com.squirrelbucket.daffodil.core;
 import com.squirrelbucket.daffodil.Daffodil;
 import com.squirrelbucket.daffodil.core.ModBedItem;
 import com.squirrelbucket.daffodil.core.ModBlocks;
+import com.squirrelbucket.daffodil.client.CustomDyeColors;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
@@ -24,11 +26,18 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
     public static final RegistryObject<Item> DAFFODIL_DYE = ITEMS.register("daffodil_dye",
-            () -> new Item(new Item.Properties()));
+            () -> new CustomDyeItem(CustomDyeColors.DAFFODIL, DyeColor.YELLOW, new Item.Properties()));
     public static final RegistryObject<Item> BURGUNDY_DYE = ITEMS.register("burgundy_dye",
-            () -> new Item(new Item.Properties()));
+            () -> new CustomDyeItem(CustomDyeColors.BURGUNDY, DyeColor.BROWN, new Item.Properties()));
     public static final RegistryObject<Item> SCARLET_DYE = ITEMS.register("scarlet_dye",
-            () -> new Item(new Item.Properties()));
+            () -> new CustomDyeItem(CustomDyeColors.SCARLET, DyeColor.RED, new Item.Properties()));
+
+    public static final RegistryObject<Item> DAFFODIL_BANNER = ITEMS.register("daffodil_banner",
+            () -> new CustomBannerItem(ModBlocks.DAFFODIL_BANNER.get(), ModBlocks.DAFFODIL_WALL_BANNER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SCARLET_BANNER = ITEMS.register("scarlet_banner",
+            () -> new CustomBannerItem(ModBlocks.SCARLET_BANNER.get(), ModBlocks.SCARLET_WALL_BANNER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BURGUNDY_BANNER = ITEMS.register("burgundy_banner",
+            () -> new CustomBannerItem(ModBlocks.BURGUNDY_BANNER.get(), ModBlocks.BURGUNDY_WALL_BANNER.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> DAFFODIL_ITEM = ITEMS.register("daffodil_flower",
             () -> new BlockItem(ModBlocks.DAFFODIL_BLOCK.get(), new Item.Properties()));
