@@ -1,4 +1,4 @@
-﻿
+
 {
   "block.daffodil.daffodil_flower": "Daffodil",
   "block.daffodil.daffodil_wool": "Daffodil Wool",
@@ -16,8 +16,10 @@
   "item.daffodil.scarlet_banner": "Scarlet Banner",
   "item.daffodil.burgundy_banner": "Burgundy Banner",
 
+  "item.daffodil.plum": "Plum",
   "block.daffodil.plum_leaves": "Plum Leaves",
   "block.daffodil.flowering_plum_leaves": "Flowering Plum Leaves",
+  "block.daffodil.plum_sapling": "Plum Sapling",
   "block.daffodil.plum_planks": "Plum Planks",
   "block.daffodil.plum_log": "Plum Log",
   "block.daffodil.stripped_plum_log": "Stripped Plum Log",
@@ -31,6 +33,16 @@
   "block.daffodil.plum_door": "Plum Door",
   "block.daffodil.plum_fence": "Plum Fence",
   "block.daffodil.plum_fence_gate": "Plum Fence Gate",
+  "block.daffodil.plum_sign": "Plum Sign",
+  "block.daffodil.plum_wall_sign": "Plum Wall Sign",
+  "block.daffodil.plum_hanging_sign": "Plum Hanging Sign",
+  "block.daffodil.plum_wall_hanging_sign": "Plum Wall Hanging Sign",
+  "item.daffodil.plum_sign": "Plum Sign",
+  "item.daffodil.plum_hanging_sign": "Plum Hanging Sign",
+  "item.daffodil.plum_boat": "Plum Boat",
+  "item.daffodil.plum_chest_boat": "Plum Chest Boat",
+  "entity.daffodil.plum_boat": "Boat",
+  "entity.daffodil.plum_chest_boat": "Boat with Chest",
 
   "block.daffodil.hibiscus_flower": "Hibiscus",
   "block.daffodil.burgundy_wool": "Burgundy Wool",

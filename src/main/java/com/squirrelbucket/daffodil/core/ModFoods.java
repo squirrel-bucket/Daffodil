@@ -9,4 +9,9 @@ public class ModFoods {
             .nutrition(2)
             .saturationMod(0.1f)
             .build();
+
+    public static final FoodProperties PLUM = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(0.3f)
+            .build();
 }

@@ -1,34 +1,22 @@
 package com.squirrelbucket.daffodil.core;
 
-import com.squirrelbucket.daffodil.Daffodil;
 import com.squirrelbucket.daffodil.client.CustomDyeColors;
 import com.squirrelbucket.daffodil.core.customBlocks.customBannerBlock;
 import com.squirrelbucket.daffodil.core.customBlocks.customWallBannerBlock;
 import com.squirrelbucket.daffodil.core.customBlocks.customBedBlock;
 import com.squirrelbucket.daffodil.core.customBlocks.customBerryBushBlock;
-import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
+import com.squirrelbucket.daffodil.core.plum.PlumSaplingBlock;
+import com.squirrelbucket.daffodil.core.plum.PlumCeilingHangingSignBlock;
+import com.squirrelbucket.daffodil.core.plum.PlumStandingSignBlock;
+import com.squirrelbucket.daffodil.core.plum.PlumWallHangingSignBlock;
+import com.squirrelbucket.daffodil.core.plum.PlumWallSignBlock;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.rmi.registry.Registry;
 
 public class ModBlocks {
     public static final String MODID = "daffodil";
@@ -39,6 +27,8 @@ public class ModBlocks {
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
     public static final RegistryObject<Block> FLOWERING_PLUM_LEAVES = BLOCKS.register("flowering_plum_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.FLOWERING_AZALEA_LEAVES)));
+    public static final RegistryObject<Block> PLUM_SAPLING = BLOCKS.register("plum_sapling",
+            () -> new PlumSaplingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> PLUM_PLANKS = BLOCKS.register("plum_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> PLUM_LOG = BLOCKS.register("plum_log",
@@ -67,6 +57,15 @@ public class ModBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
     public static final RegistryObject<Block> PLUM_FENCE_GATE = BLOCKS.register("plum_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), ModWoodTypes.PLUM_WOOD_TYPE));
+
+    public static final RegistryObject<Block> PLUM_SIGN = BLOCKS.register("plum_sign",
+            () -> new PlumStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.PLUM_WOOD_TYPE));
+    public static final RegistryObject<Block> PLUM_WALL_SIGN = BLOCKS.register("plum_wall_sign",
+            () -> new PlumWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.PLUM_WOOD_TYPE));
+    public static final RegistryObject<Block> PLUM_HANGING_SIGN = BLOCKS.register("plum_hanging_sign",
+            () -> new PlumCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.PLUM_WOOD_TYPE));
+    public static final RegistryObject<Block> PLUM_WALL_HANGING_SIGN = BLOCKS.register("plum_wall_hanging_sign",
+            () -> new PlumWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PLUM_WOOD_TYPE));
 
     public static final RegistryObject<Block> DAFFODIL_BLOCK = BLOCKS.register("daffodil_flower",
             () -> new FlowerBlock(MobEffects.CONFUSION, 100, BlockBehaviour.Properties.copy(Blocks.POPPY)));

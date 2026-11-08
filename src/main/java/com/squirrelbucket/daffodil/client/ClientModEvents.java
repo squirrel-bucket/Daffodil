@@ -4,7 +4,13 @@ import com.squirrelbucket.daffodil.client.renderer.ModBedRenderer;
 import com.squirrelbucket.daffodil.client.renderer.ModBannerRenderer;
 import com.squirrelbucket.daffodil.client.screen.ModLoomScreen;
 import com.squirrelbucket.daffodil.core.ModBlockEntities;
+import com.squirrelbucket.daffodil.core.ModEntities;
+import com.squirrelbucket.daffodil.core.ModWoodTypes;
+import com.squirrelbucket.daffodil.client.renderer.PlumBoatRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -23,6 +29,7 @@ public class ClientModEvents {
     @SubscribeEvent
     public static void clientSetup(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
+            Sheets.addWoodType(ModWoodTypes.PLUM_WOOD_TYPE);
             BlockEntityRenderers.register(BlockEntityType.BED, net.minecraft.client.renderer.blockentity.BedRenderer::new);
             @SuppressWarnings("unchecked")
             Map<MenuType<?>, Object> screens = (Map<MenuType<?>, Object>) (Map<?, ?>)
@@ -44,6 +51,10 @@ public class ClientModEvents {
                 ModBedRenderer::new
         );
         BlockEntityRenderers.register(ModBlockEntities.CUSTOM_BANNER.get(), ModBannerRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.PLUM_SIGN.get(), SignRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.PLUM_HANGING_SIGN.get(), HangingSignRenderer::new);
+        event.registerEntityRenderer(ModEntities.PLUM_BOAT.get(), context -> new PlumBoatRenderer(context, false));
+        event.registerEntityRenderer(ModEntities.PLUM_CHEST_BOAT.get(), context -> new PlumBoatRenderer(context, true));
     }
 
 

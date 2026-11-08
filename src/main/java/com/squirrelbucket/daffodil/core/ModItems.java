@@ -1,20 +1,13 @@
 package com.squirrelbucket.daffodil.core;
 
-import com.squirrelbucket.daffodil.Daffodil;
-import com.squirrelbucket.daffodil.core.ModBedItem;
-import com.squirrelbucket.daffodil.core.ModBlocks;
 import com.squirrelbucket.daffodil.client.CustomDyeColors;
+import com.squirrelbucket.daffodil.core.plum.PlumBoatItem;
 import net.minecraft.world.item.DyeColor;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.BedItem;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.SignItem;
+import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.level.block.Block;
-import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -44,6 +37,10 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.PLUM_LEAVES.get(), new Item.Properties()));
     public static final RegistryObject<Item> FLOWERING_PLUM_LEAVES = ITEMS.register("flowering_plum_leaves",
             () -> new BlockItem(ModBlocks.FLOWERING_PLUM_LEAVES.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_SAPLING = ITEMS.register("plum_sapling",
+            () -> new BlockItem(ModBlocks.PLUM_SAPLING.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM = ITEMS.register("plum",
+            () -> new Item(new Item.Properties().food(ModFoods.PLUM)));
 
     public static final RegistryObject<Item> PLUM_PLANKS = ModItems.ITEMS.register("plum_planks", () -> new BlockItem(ModBlocks.PLUM_PLANKS.get(), new Item.Properties()));
     public static final RegistryObject<Item> PLUM_LOG = ModItems.ITEMS.register("plum_log", () -> new BlockItem(ModBlocks.PLUM_LOG.get(), new Item.Properties()));
@@ -60,6 +57,15 @@ public class ModItems {
     public static final RegistryObject<Item> PLUM_DOOR = ModItems.ITEMS.register("plum_door", () -> new BlockItem(ModBlocks.PLUM_DOOR.get(), new Item.Properties()));
     public static final RegistryObject<Item> PLUM_FENCE = ModItems.ITEMS.register("plum_fence", () -> new BlockItem(ModBlocks.PLUM_FENCE.get(), new Item.Properties()));
     public static final RegistryObject<Item> PLUM_FENCE_GATE = ModItems.ITEMS.register("plum_fence_gate", () -> new BlockItem(ModBlocks.PLUM_FENCE_GATE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> PLUM_SIGN = ITEMS.register("plum_sign",
+            () -> new SignItem(new Item.Properties(), ModBlocks.PLUM_SIGN.get(), ModBlocks.PLUM_WALL_SIGN.get()));
+    public static final RegistryObject<Item> PLUM_HANGING_SIGN = ITEMS.register("plum_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.PLUM_HANGING_SIGN.get(), ModBlocks.PLUM_WALL_HANGING_SIGN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLUM_BOAT = ITEMS.register("plum_boat",
+            () -> new PlumBoatItem(false, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> PLUM_CHEST_BOAT = ITEMS.register("plum_chest_boat",
+            () -> new PlumBoatItem(true, new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> DAFFODIL_ITEM = ITEMS.register("daffodil_flower",
             () -> new BlockItem(ModBlocks.DAFFODIL_BLOCK.get(), new Item.Properties()));

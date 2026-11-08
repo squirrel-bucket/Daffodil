@@ -30,12 +30,14 @@ public class Daffodil
         IEventBus modEventBus = context.getModEventBus();
 
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
+        ModEntities.ENTITY_TYPES.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
+        modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(this::restoreVanillaDyeLookup);
     }

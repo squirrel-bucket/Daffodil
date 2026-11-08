@@ -2,6 +2,8 @@ package com.squirrelbucket.daffodil.core;
 
 import com.squirrelbucket.daffodil.customBlockEntities.customBannerBlockEntity;
 import com.squirrelbucket.daffodil.customBlockEntities.customBedBlockEntity;
+import com.squirrelbucket.daffodil.customBlockEntities.PlumSignBlockEntity;
+import com.squirrelbucket.daffodil.customBlockEntities.PlumHangingSignBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -34,4 +36,12 @@ public class ModBlockEntities {
                             ModBlocks.BURGUNDY_WALL_BANNER.get(),
                             ModBlocks.SCARLET_WALL_BANNER.get()
                     ).build(null));
+
+    public static final RegistryObject<BlockEntityType<PlumSignBlockEntity>> PLUM_SIGN = BLOCK_ENTITIES.register("plum_sign",
+            () -> BlockEntityType.Builder.of(PlumSignBlockEntity::new,
+                    ModBlocks.PLUM_SIGN.get(), ModBlocks.PLUM_WALL_SIGN.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<PlumHangingSignBlockEntity>> PLUM_HANGING_SIGN = BLOCK_ENTITIES.register("plum_hanging_sign",
+            () -> BlockEntityType.Builder.of(PlumHangingSignBlockEntity::new,
+                    ModBlocks.PLUM_HANGING_SIGN.get(), ModBlocks.PLUM_WALL_HANGING_SIGN.get()).build(null));
 }
