@@ -5,6 +5,7 @@ import com.squirrelbucket.daffodil.core.customBlocks.customBannerBlock;
 import com.squirrelbucket.daffodil.core.customBlocks.customWallBannerBlock;
 import com.squirrelbucket.daffodil.core.customBlocks.customBedBlock;
 import com.squirrelbucket.daffodil.core.customBlocks.customBerryBushBlock;
+import com.squirrelbucket.daffodil.core.customBlocks.HibiscusFlowerBlock;
 import com.squirrelbucket.daffodil.core.plum.PlumSaplingBlock;
 import com.squirrelbucket.daffodil.core.plum.PlumCeilingHangingSignBlock;
 import com.squirrelbucket.daffodil.core.plum.PlumStandingSignBlock;
@@ -70,7 +71,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DAFFODIL_BLOCK = BLOCKS.register("daffodil_flower",
             () -> new FlowerBlock(MobEffects.CONFUSION, 100, BlockBehaviour.Properties.copy(Blocks.POPPY)));
     public static final RegistryObject<Block> HIBISCUS_BLOCK = BLOCKS.register("hibiscus_flower",
-            () -> new FlowerBlock(MobEffects.REGENERATION, 100, BlockBehaviour.Properties.of()
+            () -> new HibiscusFlowerBlock(MobEffects.REGENERATION, 100, BlockBehaviour.Properties.of()
                     .noCollission()
                     .instabreak()
                     .sound(SoundType.GRASS)

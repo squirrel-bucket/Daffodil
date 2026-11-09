@@ -4,10 +4,13 @@ import com.squirrelbucket.daffodil.client.renderer.ModBedRenderer;
 import com.squirrelbucket.daffodil.client.renderer.ModBannerRenderer;
 import com.squirrelbucket.daffodil.client.screen.ModLoomScreen;
 import com.squirrelbucket.daffodil.core.ModBlockEntities;
+import com.squirrelbucket.daffodil.core.ModBlocks;
 import com.squirrelbucket.daffodil.core.ModEntities;
 import com.squirrelbucket.daffodil.core.ModWoodTypes;
 import com.squirrelbucket.daffodil.client.renderer.PlumBoatRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.Sheets;
@@ -29,6 +32,7 @@ public class ClientModEvents {
     @SubscribeEvent
     public static void clientSetup(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.PLUM_SAPLING.get(), RenderType.cutout());
             Sheets.addWoodType(ModWoodTypes.PLUM_WOOD_TYPE);
             BlockEntityRenderers.register(BlockEntityType.BED, net.minecraft.client.renderer.blockentity.BedRenderer::new);
             @SuppressWarnings("unchecked")

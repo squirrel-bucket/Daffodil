@@ -2,5 +2,5 @@
   "type": "forge:add_features",
   "biomes": "minecraft:lush_caves",
   "features": "daffodil:plum_tree_placed",
-  "step": "underground_decoration"
+  "step": "vegetal_decoration"
 }
