@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_terracotta",
+  "key": {
+    "#": "minecraft:terracotta",
+    "X": "daffodil:scarlet_dye"
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "id": "daffodil:scarlet_terracotta",
+    "count": 8
+  },
+  "show_notification": true
+}

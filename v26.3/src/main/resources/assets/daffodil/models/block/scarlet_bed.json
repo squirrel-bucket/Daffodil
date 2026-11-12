@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/bed",
+  "textures": {
+    "particle": "daffodil:block/scarlet_wool"
+  }
+}

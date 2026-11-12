@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "plum_wood",
+  "key": {
+    "#": "daffodil:plum_log"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "daffodil:plum_wood",
+    "count": 3
+  }
+}

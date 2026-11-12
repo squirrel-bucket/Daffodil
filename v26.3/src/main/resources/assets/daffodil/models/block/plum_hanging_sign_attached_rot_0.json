@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_attached_hanging_sign_rot_0",
+  "textures": {
+    "all": "daffodil:block/plum_hanging_sign",
+    "particle": "daffodil:block/stripped_plum_log"
+  }
+}

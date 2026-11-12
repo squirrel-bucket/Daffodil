@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_sign",
+  "key": {
+    "#": "daffodil:plum_planks",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "###",
+    "###",
+    " X "
+  ],
+  "result": {
+    "id": "daffodil:plum_sign",
+    "count": 3
+  },
+  "show_notification": true
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "daffodil:block/plum_log_top",
+    "side": "daffodil:block/plum_log"
+  }
+}

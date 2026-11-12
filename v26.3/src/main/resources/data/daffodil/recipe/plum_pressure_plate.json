@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "plum_wood",
+  "key": {
+    "#": "daffodil:plum_planks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "daffodil:plum_pressure_plate"
+  }
+}

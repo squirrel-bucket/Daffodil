@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "plum_wood",
+  "key": {
+    "#": "daffodil:plum_planks",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "#S#",
+    "#S#"
+  ],
+  "result": {
+    "id": "daffodil:plum_fence",
+    "count": 3
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "values": {
+    "minecraft:axe": [
+      {
+        "block_state_provider": {
+          "type": "minecraft:rule_based",
+          "rules": [
+            {
+              "if_true": {
+                "type": "minecraft:matching_blocks",
+                "blocks": "daffodil:plum_log"
+              },
+              "then": {
+                "type": "minecraft:copy_properties",
+                "source": {
+                  "id": "daffodil:stripped_plum_log",
+                  "properties": { "axis": "y" }
+                }
+              }
+            },
+            {
+              "if_true": {
+                "type": "minecraft:matching_blocks",
+                "blocks": "daffodil:plum_wood"
+              },
+              "then": {
+                "type": "minecraft:copy_properties",
+                "source": {
+                  "id": "daffodil:stripped_plum_wood",
+                  "properties": { "axis": "y" }
+                }
+              }
+            }
+          ]
+        },
+        "sound": "minecraft:item.axe.strip",
+        "particle": "scrape"
+      }
+    ]
+  }
+}

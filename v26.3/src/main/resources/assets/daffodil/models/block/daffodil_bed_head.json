@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/template_bed_head",
+  "textures": {
+    "east": "daffodil:block/daffodil_bed_head_east",
+    "north": "daffodil:block/daffodil_bed_head_north",
+    "west": "daffodil:block/daffodil_bed_head_west",
+    "up": "daffodil:block/daffodil_bed_head_up",
+    "down": "daffodil:block/daffodil_bed_down",
+    "particle": "daffodil:block/plum_planks"
+  }
+}

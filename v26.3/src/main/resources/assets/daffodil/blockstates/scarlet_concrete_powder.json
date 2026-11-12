@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "daffodil:block/scarlet_concrete_powder"
+      },
+      {
+        "model": "daffodil:block/scarlet_concrete_powder",
+        "y": 90
+      },
+      {
+        "model": "daffodil:block/scarlet_concrete_powder",
+        "y": 180
+      },
+      {
+        "model": "daffodil:block/scarlet_concrete_powder",
+        "y": 270
+      }
+    ]
+  }
+}

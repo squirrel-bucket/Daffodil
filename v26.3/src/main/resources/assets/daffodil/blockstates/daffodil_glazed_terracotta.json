@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "daffodil:block/daffodil_glazed_terracotta",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "daffodil:block/daffodil_glazed_terracotta",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "daffodil:block/daffodil_glazed_terracotta"
+    },
+    "facing=west": {
+      "model": "daffodil:block/daffodil_glazed_terracotta",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "daffodil_dye",
+  "ingredients": [
+    "daffodil:daffodil_flower"
+  ],
+  "result": {
+    "id": "daffodil:daffodil_dye"
+  }
+}

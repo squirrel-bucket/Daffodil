@@ -1,0 +1,6 @@
+{
+    "model":  {
+                  "type":  "minecraft:model",
+                  "model":  "daffodil:block/daffodil_concrete"
+              }
+}

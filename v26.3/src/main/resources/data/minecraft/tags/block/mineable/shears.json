@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "daffodil:daffodil_wool",
+    "daffodil:burgundy_wool",
+    "daffodil:scarlet_wool",
+    "daffodil:daffodil_carpet",
+    "daffodil:burgundy_carpet",
+    "daffodil:scarlet_carpet"
+  ]
+}
